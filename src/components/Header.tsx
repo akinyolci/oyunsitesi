@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, TextField, IconButton, Menu, MenuItem, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import logo from '../images/logo.png';
 const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -16,15 +16,14 @@ const Header: React.FC = () => {
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#ff9800' }}>
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-            Webte Oyna
-          </Link>
-        </Typography>
-        
+      <Toolbar sx={{ justifyContent: 'space-between' }}> {/* Toolbar içeriğini iki yana yaymak için justifyContent eklendi */}
+      <Box sx={{ display: 'flex', alignItems: 'center' }}> {/* Logo ve menü öğelerini hizalamak için alignItems eklendi */}
+        <Link to="/"> {/* Link eklendi */}
+          <img src={logo} alt="Webte Oyna Logo" style={{ width: '100px' }} />
+        </Link>
+      </Box>        
         {/* Masaüstü menü elemanları */}
-        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}> {/* Menü öğelerini hizalamak için alignItems eklendi */}
           <Button color="inherit" component={Link} to="/">Ana Sayfa</Button>
           <Button color="inherit" component={Link} to="/iki-kisilik-oyunlar">İki Kişilik Oyunlar</Button>
           <Button color="inherit" component={Link} to="/lifestyle">Lifestyle</Button>

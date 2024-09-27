@@ -12,3 +12,9 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// Favicon ekleme
+const link = document.createElement('link');
+link.rel = 'icon';
+link.href = require('./images/logo.png'); // Logo dosya yolunu doğru ayarlayın
+document.head.appendChild(link);

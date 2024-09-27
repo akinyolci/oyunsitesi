@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
         </Grid>
         <Box mt={5}>
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} Webte Oyna. Tüm hakları saklıdır.
+            © {new Date().getFullYear()} HarbiOyun. Tüm hakları saklıdır.
           </Typography>
         </Box>
       </Container>

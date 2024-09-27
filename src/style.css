@@ -120,8 +120,10 @@ header .search button:hover {
 }
 
 .game-item img {
-    width: 100%;
-    height: auto;
+    height: 100px; /* Yükseklik sabitlendi */
+    width: auto; /* Genişlik otomatik ayarlandı */
+    max-width: 100%; /* Maksimum genişlik %100 */
+    object-fit: contain; /* Resmin tamamı görünsün */
 }
 
 .game-item a {
@@ -142,6 +144,10 @@ header .search button:hover {
 
 .game-item .play-button:hover {
     background-color: #0056b3;
+}
+
+.game-item h3 {
+    font-size: 13px; /* Oyun ismi boyutu küçültüldü */
 }
 
 /* Sidebar ile ilgili stilleri kaldırın */
