@@ -120,7 +120,7 @@ header .search button:hover {
 }
 
 .game-item img {
-    height: 100px; /* Yükseklik sabitlendi */
+    height: 100px; 
     width: auto; /* Genişlik otomatik ayarlandı */
     max-width: 100%; /* Maksimum genişlik %100 */
     object-fit: contain; /* Resmin tamamı görünsün */

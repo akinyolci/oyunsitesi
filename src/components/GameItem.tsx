@@ -15,7 +15,7 @@ interface GameItemProps {
 
 
 const GameItem: React.FC<GameItemProps> = ({ game }) => {
-    const imageSrc = require(`../images/${game.game_image_url}`); // Resim yolunu düzelttik
+    const imageSrc = require(`../images/${game.game_image_url}`); 
 
   return (
     <div className="game-item">

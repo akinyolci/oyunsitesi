@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   return (
     <AppBar position="static" sx={{ backgroundColor: '#ff9800' }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}> {/* Toolbar içeriğini iki yana yaymak için justifyContent eklendi */}
-      <Box sx={{ display: 'flex', alignItems: 'center' }}> {/* Logo ve menü öğelerini hizalamak için alignItems eklendi */}
+      <Box sx={{ display: 'flex', alignItems: 'center' }}> {/* Logo ve menü öğelerini hizalamak için alignItems  */}
         <Link to="/"> {/* Link eklendi */}
           <img src={logo} alt="Webte Oyna Logo" style={{ width: '100px' }} />
         </Link>
